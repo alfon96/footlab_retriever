@@ -1,0 +1,58 @@
+journal:
+  tournaments:
+    - name: SerieA
+      season_id: 76457
+      id: 23
+      start_round: 1
+      end_round: 0
+      type: national_league
+      next_available_utc_timestamp: 1772996114
+      season_human: 26 # Convention keep only the final year -> 26
+
+
+    - name: CoppaItalia
+      season_id: 77308
+      id : 328
+      start_round: 1
+      end_round: 0
+      type: national_cup
+      next_available_utc_timestamp: 1772996114
+      season_human: 26
+
+    - name: ChampionsLeague
+      season_id: 76953
+      id : 7
+      start_round: 1
+      end_round: 0
+      type: international_cup
+      next_available_utc_timestamp: 1772996114
+      season_human: 26
+
+  rounds:
+    CoppaItalia:
+      - 300/slug/preliminary
+      - 32/slug/round-of-64
+      - 6/slug/round-of-32
+      - 5/slug/round-of-16
+      - 27/slug/quarterfinals
+      - 28/slug/semifinals
+      - 29/slug/final
+
+    ChampionsLeague:
+      - 1/slug/qualification-round-1
+      - 2/slug/qualification-round-2
+      - 3/slug/qualification-round-3
+      - 636/slug/playoff-prefix/Qualification
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
+      - "7"
+      - "8"
+      - 636/slug/playoff-round
+      - 5/slug/round-of-16
+      - 27/slug/quarterfinals
+      - 28/slug/semifinals
+      - 29/slug/final

@@ -1,0 +1,12 @@
+{
+  "name": "FootlabRetriever",
+  "dockerComposeFile": "../../docker-compose.yml",
+  "service": "retriever",
+  "workspaceFolder": "/retriever",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-python.black-formatter"]
+    }
+  },
+"postCreateCommand": "git config --global --add safe.directory /retriever"
+}
