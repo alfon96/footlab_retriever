@@ -1,5 +1,5 @@
-from app.scraper.adapters.repository import MongoDbRepository
-from app.scraper.domain.model import ScraperTask, FullDbItem
+from app.adapters.repository.sc_repo import MongoDbRepository
+from app.domain.model import ScraperTask, FullDbItem
 from pymongo import MongoClient
 from tests.scraper.integration.repository.conftest import TEST_DB_NAME
 

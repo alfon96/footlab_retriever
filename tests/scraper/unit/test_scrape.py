@@ -1,11 +1,11 @@
 import pytest
-from app.scraper.service_layer.handlers import (
+from app.service_layer.handlers import (
     scrape_url,
     NoResultsFromScraper,
     ScraperError,
 )
-from app.scraper.domain.model import ScraperTask
-from app.scraper.domain.events import ScrapeSucceeded, ScrapeFailed
+from app.domain.model import ScraperTask
+from app.domain.events import ScrapeSucceeded, ScrapeFailed
 
 
 class FakeSuccessfulScraper:

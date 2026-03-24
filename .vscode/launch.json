@@ -9,7 +9,7 @@
             "name": "Python Debugger: Module",
             "type": "debugpy",
             "request": "launch",
-            "module": "app.scraper.entrypoints.crontab_script",
+            "module": "app.entrypoints.crontab_script",
             "cwd": "${workspaceFolder}"
         }
     ]

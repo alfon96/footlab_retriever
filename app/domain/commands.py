@@ -1,6 +1,9 @@
-from dataclasses import dataclass
-from app.scraper.domain.model import ScraperCategory
+from pydantic import BaseModel
 
 
-class Command:
+class Command(BaseModel):
     pass
+
+
+class ReadJournal(Command):
+    path: str

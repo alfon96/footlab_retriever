@@ -8,10 +8,10 @@ RUN chmod +x $HOME/.bashrc && $HOME/.bashrc
 RUN mkdir -p /var/run/celery && mkdir -p /var/log/celery
 
 WORKDIR /retriever
-RUN pip install --upgrade pip && pip install uv && uv venv --clear
+RUN pip install --upgrade pip && pip install uv && uv venv --clear /venv 
 ENV PATH="/venv/bin:$PATH"
 COPY pyproject.toml uv.lock ./
-RUN uv sync && uv run playwright install
+RUN uv sync --active && uv run --active playwright install
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chrome for Testing that Puppeteer

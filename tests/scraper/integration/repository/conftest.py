@@ -1,5 +1,5 @@
 from typing import Generator
-from app.scraper.adapters.repository import MongoDbRepository
+from app.adapters.repository.sc_repo import MongoDbRepository
 import pytest
 
 TEST_DB_NAME = "repositoryTest"

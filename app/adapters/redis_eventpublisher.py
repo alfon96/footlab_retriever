@@ -1,4 +1,4 @@
-from app.scraper.domain.events import Event
+from app.domain.events import Event
 from dataclasses import asdict
 import redis
 import json

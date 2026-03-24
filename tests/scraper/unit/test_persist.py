@@ -1,11 +1,11 @@
 import pytest
-from app.scraper.domain.model import FullDbItem, ScraperTask
-from app.scraper.domain.events import (
+from app.domain.model import FullDbItem, ScraperTask
+from app.domain.events import (
     ScrapeSucceeded,
     PersistFailed,
     DbItemCreated,
 )
-from app.scraper.service_layer.handlers import save_data_on_db
+from app.service_layer.handlers import save_data_on_db
 
 
 class FakeSuccessfulScraperRepo:
